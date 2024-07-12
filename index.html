@@ -16,15 +16,16 @@
       }
       body {
         height: 100vb;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #fafbfc;
+        background-color: #150a16;
       }
       .box {
-        background-color: #bfc1ab;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        backdrop-filter: invert(5%);
         max-width: 400px;
-        min-width: 340px;
+        min-width: 310px;
         height: 400px;
         display: flex;
         flex-direction: column;
@@ -34,15 +35,16 @@
         gap: 1.5rem;
       }
       p {
-        color: #626784;
+        color: #f5e9f5;
         font-family: "Courier New", Courier, monospace;
         font-size: larger;
+        font-weight: 700;
       }
     </style>
   </head>
   <body>
     <div class="box">
-      <l-leapfrog size="80" speed="2.5" color="#626784"></l-leapfrog>
+      <l-leapfrog size="80" speed="2.5" color="#f5e9f5"></l-leapfrog>
       <p>Coming Soon...</p>
     </div>
   </body>
